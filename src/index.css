@@ -1,4 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body{
-    /* text-align: center; */
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    letter-spacing: 1px;
+}
+img{
+    width: 25vw;
+    height: 42vh;
+}
+@media screen and (min-width:992px){
+    .movie-container {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 1.5rem;
+    }
 }
