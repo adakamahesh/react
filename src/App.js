@@ -219,8 +219,20 @@ function App() {
       <Movie title={data[2].title} imgurl={data[2].imgurl} description={data[2].description}/>     */}
     </section>
             {/* {PROPS EX} */}
-            <section className="posts-container">
-          <Profile />
+        <section className="posts-container">
+          {data1.map((eachobj)=>{
+              const {id,thumbnailUrl,title,url}=eachobj;
+              return ( 
+              <Profile
+               key={id} 
+               id={id} 
+               thumbnailUrl={thumbnailUrl} 
+               title={title} 
+               url={url}
+              />
+              );
+            })
+          }
         </section>
     </div>
   );
@@ -241,11 +253,15 @@ const Movie=(props)=>{
   );
 }
 
-const Profile=()=>{
+const Profile=(props)=>{
+  const {title,thumbnailUrl,url}=props;
   return( 
   <article className="profile-card">
-    <img src="https://via.placeholder.com/600/45601a" alt="some thing"/>
-    <h1 className="title">harum velit vero totam</h1>
+    <img src={thumbnailUrl} alt="some thing"/>
+    <h1 className="title">{title}</h1>
+    <a href={url} className="button">
+      details
+    </a>
   </article>
   );
 }
