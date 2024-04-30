@@ -2,12 +2,17 @@ import React from 'react'
 
 const EventHandling = () => {
 
-    const ClickHandle =() =>{
-        console.log('mahesh');
-    };
+    // const ClickHandle =(e) =>{
+    //     console.log(e);
+    // };
+
+    function ClickHandle(e,firstname) {
+        console.log("Mahesh",e ,firstname);
+    }
+
   return (
     <main className='container'>
-        <button className='button' onClick={ClickHandle}>click me</button>
+        <button className='button' onClick={(e) => ClickHandle(e,'Babu')}>click me</button>
     </main>
   );
 };
