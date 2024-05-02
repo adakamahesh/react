@@ -3,7 +3,12 @@ import React,{useState} from "react";
 const Index= () =>{
     const [Count,setCount]=useState(0);
     const incrementcount =()=>{
-        setCount(Count+1);
+        setCount((prevcount)=>{
+            return prevcount+1;
+        });
+        // setCount((prevcount)=>{
+        //     return prevcount+1;
+        // });
     };
     const decrementcount =()=>{
         setCount(Count-1)
