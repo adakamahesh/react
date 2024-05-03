@@ -6,6 +6,7 @@ import App from './App';
 import EventHandling from './event-handling/EventHandling';
 import  UseState  from './use-state-hooks/UseState';
 import UseState2 from './use-state-hooks/UseState2'
+import UseStateex1 from './use-state-hooks/UseState-ex-1'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -15,7 +16,8 @@ setInterval(()=>{
       {/* <App /> */}
       {/* <EventHandling /> */}
       {/* <UseState/> */}
-      <UseState2/>
+      {/* <UseState2/> */}
+      <UseStateex1/>
     </React.StrictMode>
   );
 },1000)
