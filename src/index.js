@@ -2,12 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 // import App from './App';
 import "./index.css";
-import App from './App';
-import EventHandling from './event-handling/EventHandling';
-import  UseState  from './use-state-hooks/UseState';
-import UseState2 from './use-state-hooks/UseState2'
-import UseStateex1 from './use-state-hooks/UseState-ex-1'
-import UseStateex2 from './use-state-hooks/UseState-ex-2'
+// import App from './App';
+// import EventHandling from './event-handling/EventHandling';
+// import  UseState  from './use-state-hooks/UseState';
+// import UseState2 from './use-state-hooks/UseState2'
+// import UseStateex1 from './use-state-hooks/UseState-ex-1'
+// import UseStateex2 from './use-state-hooks/UseState-ex-2'
+import UseStateex3 from './use-state-hooks/UseState-ex-3'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -19,7 +20,8 @@ setInterval(()=>{
       {/* <UseState/> */}
       {/* <UseState2/> */}
       {/* <UseStateex1/> */}
-      <UseStateex2/>
+      {/* <UseStateex2/> */}
+      <UseStateex3/>
     </React.StrictMode>
   );
 },1000)
