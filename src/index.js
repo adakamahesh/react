@@ -9,7 +9,8 @@ import "./index.css";
 // import UseStateex1 from './use-state-hooks/UseState-ex-1'
 // import UseStateex2 from './use-state-hooks/UseState-ex-2'
 // import UseStateex3 from './use-state-hooks/UseState-ex-3'
-import UseEffect from './useEffect-hooks/useeffect'
+// import UseEffect from './useEffect-hooks/useeffect'
+import UseEffectex1 from './useEffect-hooks/useeffect-ex-1'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -23,7 +24,8 @@ setInterval(()=>{
       {/* <UseStateex1/> */}
       {/* <UseStateex2/> */}
       {/* <UseStateex3/> */}
-      <UseEffect/>  
+      {/* <UseEffect/>   */}
+      <UseEffectex1/>
     </React.StrictMode>
   );
 },1000)
