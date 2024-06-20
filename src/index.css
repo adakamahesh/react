@@ -84,7 +84,7 @@ img{
     }
 }
 
-nav {
+nav.primary-nav {
     padding: 20px;
     background-color: lightblue;
 }
@@ -95,4 +95,18 @@ nav a.active{
     font-weight: bold;
     text-decoration: none;
     color: black;
+}
+.card-container{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+@media screen and (min-width:992px) {
+    .card-container{
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem;
+    }
+}
+.card{
+    background: lightblue;
+    padding: 10px;
 }

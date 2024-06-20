@@ -35,5 +35,5 @@ setInterval(()=>{
       </BrowserRouter>
     </React.StrictMode>
   );
-},1000)
+})
 
